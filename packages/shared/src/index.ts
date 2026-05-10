@@ -1,5 +1,4 @@
-// Shared types â€” used by both backend and frontend.
-// As the game grows, add new entities here.
+// Shared types — used by both backend and frontend.
 
 export interface HealthResponse {
   status: 'ok';
@@ -9,5 +8,8 @@ export interface HealthResponse {
 export interface Player {
   id: string;
   name: string;
+  equity: number;
+  cash: number;
   createdAt: string;
+  updatedAt: string;
 }
